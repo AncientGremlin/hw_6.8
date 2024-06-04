@@ -26,10 +26,17 @@
     <header>
         <!-- навигация  -->
         <nav>        
-            <ul>
+            <ul class="navigation_in_header">
                 <li><a href="#">Главная</a></li>
-                <li><a href="./pages/news_TZ.html">Новости согласно ТЗ</a></li>
-                <li><a href="./pages/real_news.html">Нетривиальные новости</a></li>
+                <li class="show_drop_list">
+                    <span >Задачи 1-4</span>  
+                    <ul class="drop_down_list">
+                        <li><a href="#">Задача 1</a></li>
+                        <li><a href="#">Задача 2</a></li>
+                        <li><a href="#">Задача 3</a></li>
+                        <li><a href="#">Задача 4</a></li>
+                    </ul>
+                </li> 
                 <li><a href="pages/about_us.html">О нас</a></li>
                 <li><a href="pages/contacts.html">Контакты</a></li>
                 <!-- заложим воможность смены темы с ночной на дневную с помощью js и печенек
@@ -49,9 +56,6 @@
             <div class="images_nav">
                 <div class="image_nav border1" id="news_TZ_img">
                     <a href="pages/news_TZ.html">Новости согласно ТЗ</a>
-                </div>
-                <div class="image_nav border1" id="news_img">
-                    <a href="pages/real_news.html">Новости</a>
                 </div>
                 <div class="image_nav border1" id="about_img">
                     <a href="pages/about_us.html">О нас</a>

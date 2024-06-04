@@ -22,12 +22,22 @@
     <header>
         <!-- навигация  -->
         <nav>        
-            <ul>
+            <ul class="navigation_in_header">
                 <li><a href="../index.html">Главная</a></li>
-                <li><a href="./news_TZ.html">Новости согласно ТЗ</a></li>
-                <li><a href="./real_news.html">Нетривиальные новости</a></li>
+                <li class="show_drop_list">
+                    <span >Задачи 1-4</span>  
+                    <ul class="drop_down_list">
+                        <li><a href="#">Задача 1</a></li>
+                        <li><a href="#">Задача 2</a></li>
+                        <li><a href="#">Задача 3</a></li>
+                        <li><a href="#">Задача 4</a></li>
+                    </ul>
+                </li> 
                 <li><a href="./about_us.html">О нас</a></li>
                 <li><a href="#">Контакты</a></li>
+                <!-- заложим воможность смены темы с ночной на дневную с помощью js и печенек
+                <li>Сменить тему</li>
+                -->
             </ul>
         </nav>
     </header>
