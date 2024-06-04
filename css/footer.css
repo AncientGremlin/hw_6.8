@@ -1,0 +1,39 @@
+footer {
+    color: #b5b8b1;
+    text-decoration: none; /* к дьяволу подчеркивание */
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+footer span{
+    display: block;
+    color: antiquewhite;
+}
+footer a {
+    color: antiquewhite;
+    font-size: 19px;
+    font-style: italic;
+}
+
+#boring_footer{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+#boring_footer .links > a {
+    color: antiquewhite;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    text-decoration: none; 
+    text-transform: uppercase;
+    font-style: normal;
+
+}
+.copyrights{
+    color:blanchedalmond;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    margin: 20px;
+}

@@ -1,0 +1,28 @@
+/* особый класс для div */
+.day_div {
+    background-color: #fdffe0b2;
+    color: #1a130e;
+    font-size: 17px;
+}
+.day_div a{
+    color: #1e4224;
+    font-weight: bold;
+}
+.day_div h1{
+    font-size: 23px;
+    font-weight: bolder;
+/* fffft00-o999999 - правка рептилоида священна! Даже не пытайтесь узнать, что же игуан 
+подразумевал! PS привет программистам, коты которых также любят лежать на клавиатуре...
+и фиг их сгонишь*/ 
+    text-align: center;
+}
+.day_div h2{
+    font-size: 19px;
+    font-weight: bolder;
+}
+.day_div p{
+    margin:10px;
+}
+.day_div address{
+    margin:10px; 
+}

@@ -1,0 +1,40 @@
+.main_content {
+    margin: 40px;
+    padding: 10px;
+}
+
+.main_under_header{
+    padding: 10px;
+    margin: 0px 40px 40px 40px;
+}
+.main_under_header > p{
+    padding-top: 0;
+  
+}
+#boring_main article{
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(128,128,128);
+}
+#boring_main a{
+    color: rgb(33, 37, 41);
+    text-decoration: none;
+}
+#boring_main article a:hover{
+    color: #0085a1;
+}
+#boring_main article h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+#boring_main .article-meta {
+    color: rgb(134,142,150);
+    margin-top: 5px;
+}
+
+#boring_main article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}

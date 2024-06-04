@@ -1,0 +1,25 @@
+/* особый класс для div */
+.night_div {
+    background-color:#1c1c1cf1;
+    color:antiquewhite; 
+    font-size: 17px;
+}
+.night_div a{
+    color: antiquewhite;
+    font-weight: bold;
+}
+.night_div h1{
+    font-size: 23px;
+    font-weight: bolder;
+    text-align: center;
+}
+.night_div h2{
+    font-size: 19px;
+    font-weight: bolder;
+}
+.night_div p{
+    margin:10px;
+}
+.night_div address{
+    margin:10px; 
+}
