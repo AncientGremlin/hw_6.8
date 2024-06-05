@@ -3,17 +3,17 @@ const cookie_night="style=night";
 const li_night=document.querySelector("#night_style");
 const li_day=document.querySelector("#day_style");
 var cookie=document.cookie;
-//document.cookie = "style=;SameSite=Lax;";
+
 // document.cookie = "style=night;SameSite=Strict;";
 li_night.onclick = function() {
     blackMagic("night");
-    document.cookie = "style=night;SameSite=Lax;";
+    document.cookie = "style=night;path=/;SameSite=Lax;";
     
     console.log('Меняем тему на ночную');
   }
   li_day.onclick = function() {
     blackMagic("day");
-    document.cookie = "style=day;SameSite=Lax;";
+    document.cookie = "style=day;path=/;SameSite=Lax;";
     console.log('Меняем тему на дневную');
 }
 
