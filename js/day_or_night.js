@@ -4,15 +4,16 @@ const li_night=document.querySelector("#night_style");
 const li_day=document.querySelector("#day_style");
 var cookie=document.cookie;
 //document.cookie = "style=;SameSite=Lax;";
+// document.cookie = "style=night;SameSite=Strict;";
 li_night.onclick = function() {
     blackMagic("night");
-    document.cookie = "style=night;SameSite=Strict;";
+    document.cookie = "style=night;SameSite=Lax;";
     
     console.log('Меняем тему на ночную');
   }
   li_day.onclick = function() {
     blackMagic("day");
-    document.cookie = "style=day;SameSite=Strict;";
+    document.cookie = "style=day;SameSite=Lax;";
     console.log('Меняем тему на дневную');
 }
 
