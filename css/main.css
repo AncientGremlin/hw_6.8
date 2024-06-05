@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .main_content {
     margin: 40px;
     padding: 10px;
@@ -11,30 +16,21 @@
     padding-top: 0;
   
 }
-#boring_main article{
-    width: 768px;
-    margin: 0 auto 32px;
-    padding: 6px 15px;
-    border-bottom: 1px solid rgb(128,128,128);
-}
-#boring_main a{
-    color: rgb(33, 37, 41);
-    text-decoration: none;
-}
-#boring_main article a:hover{
-    color: #0085a1;
-}
-#boring_main article h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 5px;
-}
-#boring_main .article-meta {
-    color: rgb(134,142,150);
-    margin-top: 5px;
+.main_content .central_p{
+    margin: 0 auto 0 auto;
+    width: fit-content;
 }
 
-#boring_main article img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+.comment{
+    font-style: italic;
+    font-weight: 200;
+}
+
+#pos img{
+   height: fit-content;
+}
+
+address {
+    margin:10px; 
+    font-weight: 500;
 }

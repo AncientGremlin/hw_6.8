@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="./css/images_nav.css">   
   <!-- пока не актуально   <link rel="stylesheet" href="./css/links.css">  -->
     <!-- закончили подключать стили, полззззем дальше -->
+    <script async src="./js/day_or_night.js"></script>
+    <!-- подрубаем асинхронно скрипт (страница продолжит загружаться, даже если скрипт завис, это лучше; чем 
+        пихать скрипт в конец страницы )-->
+        
     <title>Чешуя и когти</title>
     <!-- у кого-то, возможно, "Рога и копыта"-->
 </head>
@@ -29,7 +33,7 @@
             <ul class="navigation_in_header">
                 <li><a href="#">Главная</a></li>
                 <li class="show_drop_list">
-                    <span >Задачи 1-4</span>  
+                    <span>Задачи 1-4</span>  
                     <ul class="drop_down_list">
                         <li><a href="#">Задача 1</a></li>
                         <li><a href="#">Задача 2</a></li>
@@ -39,9 +43,14 @@
                 </li> 
                 <li><a href="pages/about_us.html">О нас</a></li>
                 <li><a href="pages/contacts.html">Контакты</a></li>
-                <!-- заложим воможность смены темы с ночной на дневную с помощью js и печенек
-                <li>Сменить тему</li>
-                -->
+                <li class="show_drop_list">
+                    <span>Сменить тему</span>
+                    <ul class="drop_down_list">
+                        <li id="day_style"><a href="#">Дневная</a></li>
+                        <li id="night_style"><a href="#">Ночная</a></li>
+                    </ul>
+                </li>
+                
             </ul>
         </nav>
     </header>
@@ -49,13 +58,14 @@
     <main>
         <div class="night_div main_content">
             <h1>Добро пожаловать, путник!</h1>
-            <h2>Коротко о выполненной работе:</h2>
-            <p>И снова рука не повернулась следовать исключительно ТЗ :) . Страница Новостей, выполненная исключительно согласно
-                ТЗ, расположена <a href="pages/news_TZ.html">тут</a>. 
+            
+            <p class="central_p">
+                ТЗ? Да кому оно нужно?! Мы можем сделать больше и даже бесплатно!!! <del>Особенно с JQuery и stackoverflow! (нет)</del> :)<br>
+                Список со ссылками на решение задач, требуемый на стартовой странице, расположен в навигации. 
             </p>
             <div class="images_nav">
-                <div class="image_nav border1" id="news_TZ_img">
-                    <a href="pages/news_TZ.html">Новости согласно ТЗ</a>
+                <div class="image_nav border1" id="tasks_img">
+                    <a href="pages/news_TZ.html">Решение задач</a>
                 </div>
                 <div class="image_nav border1" id="about_img">
                     <a href="pages/about_us.html">О нас</a>

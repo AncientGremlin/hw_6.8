@@ -1,7 +1,7 @@
 /* особый класс для div */
 .day_div {
-    background-color: #fdffe0b2;
-    color: #1a130e;
+    background-color: #fdffe0db;
+    color: #362b23;
     font-size: 17px;
 }
 .day_div a{
@@ -20,9 +20,6 @@
     font-size: 19px;
     font-weight: bolder;
 }
-.day_div p{
+.night_div p{
     margin:10px;
-}
-.day_div address{
-    margin:10px; 
 }

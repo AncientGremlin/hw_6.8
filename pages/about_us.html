@@ -9,12 +9,15 @@
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/scrollbar_style.css">   
     <link rel="stylesheet" href="../css/night_div.css">   
-    <link rel="stylesheet" href="./css/day_div.css"> 
+    <link rel="stylesheet" href="../css/day_div.css">  
     <link rel="stylesheet" href="../css/borders.css">   
     <link rel="stylesheet" href="../css/footer.css">      
     <link rel="stylesheet" href="../css/others.css">   
   <!-- пока не актуально   <link rel="stylesheet" href="./css/links.css">  -->
     <!-- закончили подключать стили, полззззем дальше -->
+    <script async src="../js/day_or_night.js"></script>
+    <!-- подрубаем асинхронно скрипт (страница продолжит загружаться, даже если скрипт завис, это лучше; чем 
+        пихать скрипт в конец страницы )-->   
     <title>Чешуя и когти. О нас.</title>
 </head>
 <body >
@@ -25,7 +28,7 @@
             <ul class="navigation_in_header">
                 <li><a href="../index.html">Главная</a></li>
                 <li class="show_drop_list">
-                    <span >Задачи 1-4</span>  
+                    <span>Задачи 1-4</span>  
                     <ul class="drop_down_list">
                         <li><a href="#">Задача 1</a></li>
                         <li><a href="#">Задача 2</a></li>
@@ -35,9 +38,13 @@
                 </li> 
                 <li><a href="#">О нас</a></li>
                 <li><a href="./contacts.html">Контакты</a></li>
-                <!-- заложим воможность смены темы с ночной на дневную с помощью js и печенек
-                <li>Сменить тему</li>
-                -->
+                <li class="show_drop_list">
+                    <span>Сменить тему</span>
+                    <ul class="drop_down_list">
+                        <li id="day_style"><a href="#">Дневная</a></li>
+                        <li id="night_style"><a href="#">Ночная</a></li>
+                    </ul>
+                </li>              
             </ul>
         </nav>
     </header>

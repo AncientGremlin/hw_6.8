@@ -18,17 +18,11 @@
     padding-left: 10px;
     padding-bottom: 101px;
     text-decoration: none;
+    text-shadow: -2px -1px 0 #000000ab, 2px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
-#news_TZ_img{
+#tasks_img{
     background-repeat: no-repeat; 
-    background-image: url('../images/news_TZ.jpg');
-}
-#news_TZ_img a{
-    color: black;
-}
-#news_img{
-    background-repeat: no-repeat; 
-    background-image: url('../images/news.jpg');
+    background-image: url('../images/tasks.jpg');
 }
 
 #about_img{
