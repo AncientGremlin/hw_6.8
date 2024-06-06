@@ -2,9 +2,10 @@ const cookie_day="style=day";
 const cookie_night="style=night";
 const li_night=document.querySelector("#night_style");
 const li_day=document.querySelector("#day_style");
-var cookie=document.cookie;
+var cookie_string=document.cookie;
 
 // document.cookie = "style=night;SameSite=Strict;";
+//"style=night;path=/;SameSite=Lax;";
 li_night.onclick = function() {
     blackMagic("night");
     document.cookie = "style=night;path=/;SameSite=Lax;";
@@ -13,7 +14,7 @@ li_night.onclick = function() {
   }
   li_day.onclick = function() {
     blackMagic("day");
-    document.cookie = "style=day;path=/;SameSite=Lax;";
+    document.cookie = "style=night;path=/;SameSite=Lax;";
     console.log('Меняем тему на дневную');
 }
 
@@ -42,13 +43,13 @@ function blackMagic(style) {
 }
 
 //смотрим, а есть ли среди печенек что-то похожее на необходимое нам?
-if(cookie.includes(cookie_day)|| cookie.includes(cookie_night)){
+if(cookie_string.includes(cookie_day)|| cookie_string.includes(cookie_night)){
     //сначала нам все равно придется убедиться, что это точно прямо нужная нам пара ключ-значение
     //для этого строчечную печеньку конвертируем в массив 
-    let cookies = cookie.split(";");
+    let cookies_arr = cookie_string.split(";");
     let style="";
-    for(let i=0;i<cookies.length;i++){
-        let pair=cookies[i].split("=");
+    for(let i=0;i<cookies_arr.length;i++){
+        let pair=cookies_arr[i].split("=");
         if(pair[0]=="style" && pair[1]=="night"){
             console.log("Текущая тема: ",pair[1]);
 /* 
