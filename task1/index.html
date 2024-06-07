@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru" class="scrollbar_style">
+<head>
+    <meta charset="utf-8">
+    <!--- подключаем стили, пока обойдемся без шрифтов -->
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/scrollbar_style.css">   
+    <link rel="stylesheet" href="../css/night_div.css">  
+    <link rel="stylesheet" href="../css/day_div.css">  
+    <link rel="stylesheet" href="../css/borders.css">   
+    <link rel="stylesheet" href="../css/footer.css">      
+    <link rel="stylesheet" href="../css/others.css">   
+    <link rel="stylesheet" href="../css/images_nav.css">   
+  <!-- пока не актуально   <link rel="stylesheet" href="./css/links.css">  -->
+    <!-- закончили подключать стили, полззззем дальше -->
+    <script async src="../js/day_or_night.js"></script>
+    <script acync src="./script.js"></script>
+    <!-- подрубаем асинхронно скрипт (страница продолжит загружаться, даже если скрипт завис, это лучше; чем 
+        пихать скрипт в конец страницы )-->
+    <title>Задача 1. HELLO WORLD!!!111!</title>
+</head>
+<body >
+    <!-- шапка  -->
+    <header>
+        <!-- навигация  -->
+        <nav>        
+            <ul class="navigation_in_header">
+                <li><a href="#">Главная</a></li>
+                <li class="show_drop_list">
+                    <span>Задачи 1-5</span>  
+                    <ul class="drop_down_list">
+                        <li><a href="#l">Задача 1</a></li>
+                        <li><a href="../task2/">Задача 2</a></li>
+                        <li><a href="#">Задача 3</a></li>
+                        <li><a href="#">Задача 4</a></li>
+                        <li><a href="#">Задача 5</a></li>
+                    </ul>
+                </li> 
+                <li><a href="pages/about_us.html">О нас</a></li>
+                <li><a href="pages/contacts.html">Контакты</a></li>
+                <li class="show_drop_list">
+                    <span>Сменить тему</span>
+                    <ul class="drop_down_list">
+                        <li id="day_style"><a href="#">Дневная</a></li>
+                        <li id="night_style"><a href="#">Ночная</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- пошел контент  -->
+    <main>
+        <div class="night_div main_content">
+            <p>Посмотри в консоль, там что-то важное... Возможно. А может, и нет. Бугогашеньки!</p>
+        </div>
+    </main>
+    <!-- подвал. Оставим Skillfactory: красиво стоит -->
+    <footer>
+        <span>&copy;&nbsp;Skillfactory</span>
+        <span> Background by <a href="https://unsplash.com/@briantagalog?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Brian Patrick Tagalog</a> 
+            on <a href="https://unsplash.com/photos/grayscale-photography-of-rock-formation-_8hGFBxWD0A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </span>
+        <span>Cursor icons from <a href="https://ru.freepik.com/search">freepik.com</a></span>
+        
+    </footer>
+</body>
+</html>

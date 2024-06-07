@@ -3,6 +3,7 @@
     background-color: #fdffe0db;
     color: #362b23;
     font-size: 17px;
+    min-width: fit-content;
 }
 .day_div a{
     color: #1e4224;

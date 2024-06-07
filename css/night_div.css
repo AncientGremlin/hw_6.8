@@ -3,6 +3,7 @@
     background-color:#1c1c1cf1;
     color: antiquewhite;
     font-size: 17px;
+    min-width: fit-content;
 }
 .night_div a{
     color:  antiquewhite;
