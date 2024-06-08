@@ -9,7 +9,20 @@
     color: #1e4224;
     font-weight: bold;
 }
-.day_div h1{
+
+.night_div {
+    background-color:#1c1c1cf1;
+    color: antiquewhite;
+    font-size: 17px;
+    min-width: fit-content;
+}
+.night_div a{
+    color:  antiquewhite;
+    font-weight: bold;
+}
+
+.day_div h1,
+.night_div h1{
     font-size: 23px;
     font-weight: bolder;
 /* fffft00-o999999 - правка рептилоида священна! Даже не пытайтесь узнать, что же игуан 
@@ -17,10 +30,13 @@
 и фиг их сгонишь*/ 
     text-align: center;
 }
-.day_div h2{
+.day_div h2,
+.night_div h2{
     font-size: 19px;
     font-weight: bolder;
 }
+.day_div p,
 .night_div p{
     margin:10px;
 }
+

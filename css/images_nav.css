@@ -13,6 +13,7 @@
     position: relative;
     
 }
+
 .image_nav a,
 .image_nav span{
     display: inline-block;
@@ -26,6 +27,7 @@
  
 .image_nav a:hover{
     color:rgb(207, 195, 135);
+    background: #faebd745;
 }
 
 #tasks_img{
