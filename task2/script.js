@@ -40,3 +40,11 @@ document.querySelector("#prompt").addEventListener("click", function() {
         "Для детальной информации смотреть примеры использования.");
     
 });
+
+//а ещё надо повесить обработчик на панель навигации, чтобы скрывать навигацию по странице
+document.querySelector("nav").addEventListener("mouseover", function() {
+    document.querySelector("#task2_nav").setAttribute('style', 'display:none;');    
+});
+document.querySelector("nav").addEventListener("mouseout", function() {
+    document.querySelector("#task2_nav").setAttribute('style', 'display:block;');    
+});

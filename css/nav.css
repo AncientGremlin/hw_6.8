@@ -55,6 +55,7 @@ ul.navigation_in_header > li{
 .navigation_in_header .show_drop_list:hover > .drop_down_list {
     display: block;
 }
+
 .drop_down_list > li {
     padding: 10px;
     transition: 0.5s; /*наведем постепенную красоту */

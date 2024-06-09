@@ -19,7 +19,7 @@
     <script defer src="./script.js"></script>
     <!-- подрубаем асинхронно скрипт (страница продолжит загружаться, даже если скрипт завис, это лучше; чем 
         пихать скрипт в конец страницы, а defer гарантирует что DOM подгрузится, прежде чем начнем пилить скрипт )-->
-    <title>JS-Start. 2 задача</title>
+    <title>JS-Start. 2 задача. </title>
 </head>
 <body >
     <!-- шапка  -->
@@ -54,11 +54,16 @@
     <main>
         <div class="night_div main_content">
             <aside id="task2_nav">
-                <a href="#consoleLog">Описание console.log</a><br>
-                <a href="#alert">Описание alert</a><br>
-                <a href="#prompt">Описание prompt</a><br>
+                <a href="#consoleLog_nav">Описание console.log</a><br>
+                <a href="#alert_nav">Описание alert</a><br>
+                <a href="#prompt_nav">Описание prompt</a><br>
             </aside>
             <div id="task2">
+                <h2>Задача 2.</h2>
+                <p id="consoleLog_nav"></p>            
+                <!--- из-за шапки у нас проблема, если используем в качестве якоря сам #consoleLog,
+                юзверь попадет на описание
+                --> 
                 <p id="consoleLog" class="task_p">console.log</p>
                 <div class="examples">
                     <div class="code_div">
@@ -75,6 +80,7 @@
                     <p>Результат в консоли: "5 lizards"</p>  
                 </div>
             
+                <p id="alert_nav"></p> 
                 <p id="alert" class="task_p">alert()</p>
                 <div class="examples">
                     <div class="code_div">
@@ -91,6 +97,7 @@
                      <p>Результат: вылезет уродливое окно с сообщением "5 lizards" и кнопочкой ОК</p>  
                 </div>
 
+                <p id="prompt_nav"></p> 
                 <p id="prompt" class="task_p">prompt()</p>
                 <div class="examples">
                     <div class="code_div">
@@ -121,14 +128,13 @@
                         </div>
                         <p>Результат: вылезет уродливое окно с сообщением "type something",
                                 полем для ввода текста, в котором находится текст по умолчанию "DRAGONS",
-                                и кнопками "ОК" и "Отмена". Далее возможны три сценария.
+                                и кнопками "ОК" и "Отмена". Далее возможны три сценария.</p>
                                 <ul style="list-style: decimal;">
                                     <li>Если вы просто нажмете ОК, то в консоль выведется "DRAGONS".</li>
                                     <li>Если же что-то ввели в текстовое поле, то оно отобразится в консоли.</li>
                                     <li>Если нажмете "Отмена" при любом введенном тексте, в консоли будет NULL</li>
                                 </ul>
-                                
-                                </p>
+                        
                 </div>                
             </div>
 
