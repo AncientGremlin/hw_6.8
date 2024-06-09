@@ -53,18 +53,85 @@
     <!-- пошел контент  -->
     <main>
         <div class="night_div main_content">
-            <p id="consoleLog">console.log</p>
-            <code>
-            Пример console.log
-            </code>
-            <p id="alert">Alert()</p>
-            <code>
-            Пример alert
-            </code>
-            <p id="prompt">Prompt()</p>
-            <code>
-            Пример prompt
-            </code>
+            <aside id="task2_nav">
+                <a href="#consoleLog">Описание console.log</a><br>
+                <a href="#alert">Описание alert</a><br>
+                <a href="#prompt">Описание prompt</a><br>
+            </aside>
+            <div id="task2">
+                <p id="consoleLog" class="task_p">console.log</p>
+                <div class="examples">
+                    <div class="code_div">
+                        <pre>
+                            <code>console.log("Some text");</code>
+                        </pre>
+                    </div>
+                    <p>Результат в консоли: "Some text"</p>
+                    <div class="code_div">
+                        <pre>
+                            <code>let a=5;<br>let b="lizards";<br>console.log(a," "+b);</code>
+                        </pre>
+                     </div>
+                    <p>Результат в консоли: "5 lizards"</p>  
+                </div>
+            
+                <p id="alert" class="task_p">alert()</p>
+                <div class="examples">
+                    <div class="code_div">
+                        <pre>
+                            <code>alert("");</code>
+                        </pre>
+                    </div>
+                    <p>Результат: вылезет пустое окно с кнопкой "ОК"</p>
+                    <div class="code_div">
+                        <pre>
+                            <code>let a=5;<br>let b="lizards";<br>alert(a+" "+b);</code>
+                        </pre>
+                     </div>
+                     <p>Результат: вылезет уродливое окно с сообщением "5 lizards" и кнопочкой ОК</p>  
+                </div>
+
+                <p id="prompt" class="task_p">prompt()</p>
+                <div class="examples">
+                    <div class="code_div">
+                        <pre>
+                            <code>prompt("");</code>
+                        </pre>
+                    </div>
+                    <p>Результат: вылезет пустое окно с полем для ввода текста и кнопками "ОК" и "Отмена"</p>
+                    <div class="code_div">
+                        <pre>
+                            <code>let a=5;<br>let b="lizards";<br>prompt(a+" "+b);</code>
+                        </pre>
+                     </div>
+                     <p>Результат: вылезет уродливое окно с сообщением "5 lizards",
+                        полем для ввода текста и кнопками "ОК" и "Отмена"</p>
+                    <div class="code_div">
+                            <pre>
+                                <code>let a=5;<br>let b="lizards";<br>prompt(a+" "+b,"DRAGONS");</code>
+                            </pre>
+                    </div>
+                    <p>Результат: вылезет уродливое окно с сообщением "5 lizards",
+                            полем для ввода текста, в котором находится текст по умолчанию "DRAGONS",
+                            и кнопками "ОК" и "Отмена"</p>
+                    <div class="code_div">
+                        <pre>
+                            <code>const name_of_const=prompt("type something","DRAGONS");<br>console.log(name_of_const);</code>
+                        </pre>
+                        </div>
+                        <p>Результат: вылезет уродливое окно с сообщением "type something",
+                                полем для ввода текста, в котором находится текст по умолчанию "DRAGONS",
+                                и кнопками "ОК" и "Отмена". Далее возможны три сценария.
+                                <ul style="list-style: decimal;">
+                                    <li>Если вы просто нажмете ОК, то в консоль выведется "DRAGONS".</li>
+                                    <li>Если же что-то ввели в текстовое поле, то оно отобразится в консоли.</li>
+                                    <li>Если нажмете "Отмена" при любом введенном тексте, в консоли будет NULL</li>
+                                </ul>
+                                
+                                </p>
+                </div>                
+            </div>
+
         </div>
     </main>
     <!-- подвал. Оставим Skillfactory: красиво стоит -->
@@ -74,6 +141,7 @@
             on <a href="https://unsplash.com/photos/grayscale-photography-of-rock-formation-_8hGFBxWD0A?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
         </span>
         <span>Resources for icon from <a href="https://ru.freepik.com/search">freepik.com</a> and composed by AncientGremlin</span>
+        <span>"Copy icon" from <a href="https://www.flaticon.com/free-icons/paper" title="paper icons">Paper icons created by Gregor Cresnar - Flaticon</a> </span>    
     </footer>
 </body>
 </html>

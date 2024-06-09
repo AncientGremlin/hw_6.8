@@ -20,3 +20,9 @@
 1. Зайти на [github pages](https://ancientgremlin.github.io/hw_6.8/). ***PS. настоятельно рекомендуется использовать этот вариант. Либо Firefox в помощь для пункта 2.***
 2. Клонировать данный репозиторий к себе на компьютер и запусть файл index.html 
 
+## Предыдущие работы
+* [HW 3.14](https://ancientgremlin.github.io/hw_3.14/), [репозиторий](https://github.com/AncientGremlin/hw_3.14)
+
+* [HW 4.91](https://ancientgremlin.github.io/hw_4.9.1/), [репозиторий](https://github.com/AncientGremlin/hw_4.9.1)
+
+* [HW 5.11](https://ancientgremlin.github.io/hw_5.11/), [репозиторий](https://github.com/AncientGremlin/hw_5.11)

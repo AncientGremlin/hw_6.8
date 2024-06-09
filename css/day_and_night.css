@@ -1,9 +1,8 @@
 /* особый класс для div */
 .day_div {
     background-color: #fdffe0db;
-    color: #362b23;
-    font-size: 17px;
-    min-width: fit-content;
+    color: #261f19;
+
 }
 .day_div a{
     color: #1e4224;
@@ -13,12 +12,14 @@
 .night_div {
     background-color:#1c1c1cf1;
     color: antiquewhite;
-    font-size: 17px;
-    min-width: fit-content;
 }
 .night_div a{
     color:  antiquewhite;
     font-weight: bold;
+}
+.day_div, .night_div{ 
+    min-width: fit-content;
+    font-size: 17px;
 }
 
 .day_div h1,
@@ -40,3 +41,56 @@
     margin:10px;
 }
 
+
+.examples{
+    margin: 10px;
+    width: fit-content;
+    display: inline-block;
+    background: rgba(146, 146, 146, 0.15);
+    border: 1px solid rgba(130, 129, 129, 0.3);
+    padding: 5px;
+}
+.examples::before{
+    content: "Примеры использования:";
+ /*   text-transform: uppercase; */
+    font-weight: 600;
+    width: 100%;
+}
+.code_div{
+    background: #8da17d82;
+    padding: 10px;
+    margin: 10px;
+}
+.code_div pre{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.code_div .copy{
+    float: right;
+    text-transform: uppercase;
+    font-size: 12px;
+    cursor: url('../images/cursor1.png'), pointer;
+    padding: 5px;
+}
+
+.task_p{
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: url('../images/cursor1.png'), pointer;
+}
+
+#task2{
+    margin-left: 22%;
+    width: fit-content;
+}
+#task2_nav{
+    width: 15%;
+    position: fixed;
+    border: 2px solid #00000052;
+    background-color: #c1c1c14a;
+    padding: 5px;
+    margin-top: 200px;
+}
