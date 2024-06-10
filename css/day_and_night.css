@@ -1,4 +1,3 @@
-/* особый класс для div */
 .day_div {
     background-color: #fdffe0db;
     color: #261f19;
@@ -97,4 +96,32 @@
 #alert_nav,
 #prompt_nav{
     padding-bottom:31px;
+}
+#task5_button{
+    margin: 20px auto 20px auto;
+    appearance: none;
+    border: 2px solid #00000040;
+    border-radius: 1px;
+    background: #466C43F5;
+    color: #e7e7e7;
+    padding: 8px 16px;
+    font-size: 16px;
+    display: block;
+}
+.trafficLights{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border: 2px solid #1c281cb2;
+    background-color: #8e918e36;
+    padding: 30px;
+}
+.table1{
+    background-color: #80808030;
+}
+.table1 th,
+.table1 td{
+    padding: 10px;
+    border: 2px solid #ffffff4d;
+
 }
