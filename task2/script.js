@@ -1,4 +1,4 @@
-let all_code=document.querySelectorAll(".code_div");
+var all_code=document.querySelectorAll(".code_div");
 /*
 вставляем "копировать текст" и функцию копирования
 а также для всех блоков code автоматически проставим число строк
@@ -37,7 +37,7 @@ document.querySelector("#alert").addEventListener("click", function() {
 });
 document.querySelector("#prompt").addEventListener("click", function() {
     alert("Вызывает уродливое окошко с сообщением, текстовым полем и кнопочками ОК и Отмена. Сам по себе не обрабатывает результат."+
-        "Для детальной информации смотреть примеры использования.");
+        " Для детальной информации смотреть примеры использования.");
     
 });
 
